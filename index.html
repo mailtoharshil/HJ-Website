@@ -1,87 +1,2110 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js">
 
 <head>
-    <title>Harshil Joshi</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-    <meta name="author" content="Lancingdev">
-    <meta name="description"
-        content="Harshil Sir">
-    <meta name="keywords"
-        content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, coming soon, faq">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/bootsnav.css">
-    <link rel="stylesheet" type="text/css" href="css/font-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Harshil Joshi</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon icon -->
+    <link rel="icon" href="img/HJ Logo.png" sizes="16x16" type="image/png">
+
+
+    <!-- All CSS file included here -->
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/elements.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        .faq .nav {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding-left: 0;
+        }
+
+        .faq .nav-link,
+        .faq .navbar {
+            padding: 0.5rem 1rem;
+        }
+
+        .faq .nav-link {
+            display: block;
+        }
+
+        .faq .nav-link:focus,
+        .faq .nav-link:hover {
+            text-decoration: none;
+        }
+
+        .faq .nav-link.disabled {
+            color: #6c757d;
+        }
+
+        .faq .nav-tabs {
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .faq .nav-tabs .nav-item {
+            margin-bottom: -1px;
+        }
+
+        .faq .nav-tabs .nav-link {
+            border: 1px solid transparent;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+
+        .faq .nav-tabs .nav-link:focus,
+        .faq .nav-tabs .nav-link:hover {
+            border-color: #e9ecef #e9ecef #dee2e6;
+        }
+
+        .faq .nav-tabs .nav-link.disabled {
+            color: #6c757d;
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        .faq .nav-tabs .nav-item.show .nav-link,
+        .faq .nav-tabs .nav-link.active {
+            color: #495057;
+            background-color: #fff;
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+
+        .faq .nav-tabs .dropdown-menu {
+            margin-top: -1px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .faq .nav-pills .nav-link {
+            border-radius: 0.25rem;
+        }
+
+        .faq .nav-pills .nav-link.active,
+        .faq .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: #007bff;
+        }
+
+        .faq .nav-fill .nav-item {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            -moz-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            text-align: center;
+        }
+
+        .faq .nav-justified .nav-item {
+            -webkit-flex-basis: 0;
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -moz-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .tab-content .tab-pane {
+            display: none;
+        }
+
+        .tab-content .active {
+            display: block !important;
+        }
+
+        .faq .navbar {
+            position: relative;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        .faq .navbar>.container,
+        .faq .navbar>.container-fluid {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        .faq .navbar-brand {
+            display: inline-block;
+            padding-top: 0.40625rem;
+            padding-bottom: 0.40625rem;
+            margin-right: 1rem;
+            font-size: 1.125rem;
+            line-height: inherit;
+        }
+    </style>
+    <style>
+        .faq .nav.nav-underline {
+            border-bottom: 1px solid #eeecf4;
+        }
+
+        .faq .nav.nav-underline a {
+            color: #3f3f3f;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: 0 0;
+            text-align: center;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -moz-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .faq .nav.nav-underline a.nav-item.nav-link.active {
+            color: #3f3f3f;
+            border: none;
+            background-color: transparent;
+            border-bottom: 4px solid #3f3f3f;
+            border-radius: 0;
+            margin-bottom: -2px;
+        }
+
+        .faq .tab-content .card {
+            margin-bottom: 0.75rem;
+            border: 1px solid #eeecf4;
+            border-radius: 0.5rem;
+        }
+
+        .faq .tab-content .card .card-header {
+            background-color: transparent;
+            border-bottom: none;
+            padding: 0.6rem;
+            text-decoration: none;
+        }
+
+        .faq .tab-content .card .card-header .btn-link {
+            font-weight: 700;
+            margin: -1px 20.25rem 0 3.9000000000000004rem;
+            padding: 0.375rem 0.75rem;
+            text-align: left;
+            white-space: unset;
+            display: inline-block;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            cursor: pointer;
+        }
+
+        .faq .tab-content .card .card-header .btn-link:active,
+        .faq .tab-content .card .card-header .btn-link:focus,
+        .faq .tab-content .card .card-header .btn-link:hover {
+            text-decoration: none;
+        }
+
+        .faq .tab-content .card .card-body {
+            color: #7d7d7d;
+            font-weight: 700;
+            font-size: 1.3rem;
+            padding-top: 0.75rem;
+        }
+
+        .faq .collapse-icon .card-header {
+            position: relative;
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"]:after,
+        .faq .collapse-icon a[data-toggle="collapse"]:before {
+            position: absolute;
+            top: 40%;
+            right: 20px;
+            margin-top: -8px;
+            font-family: themify;
+            -webkit-transition: all 0.3s linear 0s;
+            -o-transition: all 0.3s linear 0s;
+            -moz-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+            font-size: clac(0.65rem);
+            background-image: -webkit-gradient(linear,
+                    left top,
+                    right top,
+                    from(#28bcfd),
+                    to(#1d78ff));
+            background-image: -webkit-linear-gradient(left, #28bcfd, #1d78ff);
+            background-image: -moz-linear-gradient(left, #28bcfd, #1d78ff);
+            background-image: -o-linear-gradient(left, #28bcfd, #1d78ff);
+            background-image: linear-gradient(90deg, #28bcfd, #1d78ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"]:after {
+            content: "\e648";
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"]:before {
+            content: "\e64b";
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"] .icon {
+            float: left;
+            margin-top: 1px;
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"] .icon:after,
+        .faq .collapse-icon a[data-toggle="collapse"] .icon:before {
+            position: absolute;
+            top: 40%;
+            left: 20px;
+            margin-top: -8px;
+            font-family: themify;
+            font-size: 0.65rem;
+            -webkit-transition: all 0.3s linear 0s;
+            -o-transition: all 0.3s linear 0s;
+            -moz-transition: all 0.3s linear 0s;
+            transition: all 0.3s linear 0s;
+            background-image: -webkit-linear-gradient(45deg, #28bcfd, #1d78ff);
+            background-image: -moz-linear-gradient(45deg, #28bcfd, #1d78ff);
+            background-image: -o-linear-gradient(45deg, #28bcfd, #1d78ff);
+            background-image: linear-gradient(45deg, #28bcfd, #1d78ff);
+            background-repeat: repeat-x;
+            border: 0;
+            color: #fff;
+            padding: 0.5rem 0.65rem;
+            border-radius: 1rem;
+            -webkit-box-shadow: 0 0 12px 0 #28bcfd;
+            box-shadow: 0 0 12px 0 #28bcfd;
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"] .icon:after {
+            content: "\e622";
+        }
+
+        .faq .collapse-icon a[data-toggle="collapse"] .icon:before {
+            content: "\e61a";
+        }
+
+        .faq .collapse-icon.left a {
+            padding-left: 28px;
+        }
+
+        .faq .collapse-icon.left a:after,
+        .faq .collapse-icon.left a:before {
+            left: 20px;
+            right: auto;
+        }
+
+        .faq .collapse-icon a[aria-expanded="true"] .icon:before,
+        .faq .collapse-icon a[aria-expanded="true"]:before,
+        .faq .collapse-icon a[aria-expanded="false"] .icon:after,
+        .faq .collapse-icon a[aria-expanded="false"]:after {
+            opacity: 0;
+        }
+
+        .faq .collapse-icon.accordion-icon-rotate a[aria-expanded="true"] .icon:before,
+        .faq .collapse-icon.accordion-icon-rotate a[aria-expanded="true"]:before {
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+
+        .faq .collapse-icon.accordion-icon-rotate a[aria-expanded="false"] .icon:after,
+        .faq .collapse-icon.accordion-icon-rotate a[aria-expanded="false"]:after {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        .fade {
+            -webkit-transition: opacity 0.15s linear;
+            -o-transition: opacity 0.15s linear;
+            -moz-transition: opacity 0.15s linear;
+            transition: opacity 0.15s linear;
+        }
+
+        @media screen and (prefers-reduced-motion: reduce) {
+            .fade {
+                -webkit-transition: none;
+                -o-transition: none;
+                -moz-transition: none;
+                transition: none;
+            }
+        }
+
+        .fade:not(.show) {
+            opacity: 0;
+        }
+
+        .collapse:not(.show) {
+            display: none;
+        }
+
+        .collapsing {
+            height: 0;
+            -webkit-transition: height 0.35s ease;
+            -o-transition: height 0.35s ease;
+            -moz-transition: height 0.35s ease;
+            transition: height 0.35s ease;
+        }
+
+        @media screen and (prefers-reduced-motion: reduce) {
+            .collapsing {
+                -webkit-transition: none;
+                -o-transition: none;
+                -moz-transition: none;
+                transition: none;
+            }
+        }
+
+        .service-content {
+        height: 380px;
+        }
+    </style>
+    <!-- END Page Level CSS-->
 </head>
 
-<body>
-    <section class="p-0 bg-extra-light-gray">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-lg-6 minheight-fullscreen p-0 cover-background d-none d-lg-block"
-                    style="background-image:url('images/coming-soon-img1.jpg');"></div>
-                <div class="col-12 col-lg-6 minheight-fullscreen d-flex align-items-center bg-black p-0">
-                    <div class="text-center padding-three-all sm-padding-15px-all w-100">
-                        <div class="margin-nine-bottom md-margin-50px-bottom sm-margin-15px-bottom"><img
-                                src="images/HJ Logo.png" data-at2x="images/logo-white@2x.png" alt="Pofo" height="100px"
-                                width="100px" /></div>
-                        <h6 class="font-weight-300 text-white-2 margin-40px-bottom sm-margin-35px-bottom">We’re getting
-                            ready to launch</h6>
-                        <div data-enddate="2023/01/19 13:00:00"
-                            class="countdown text-center counter-box-3 margin-nine-bottom"></div>
-                        <div
-                            class="bg-extra-dark-gray padding-eight-all lg-padding-five-lr border-radius-6 w-70 xl-w-75 lg-w-80 sm-w-100 mx-auto sm-padding-30px-all">
-                            <h6 class="font-weight-300 text-white-2 margin-20px-bottom sm-margin-15px-bottom">Our
-                                website is under construction</h6>
-                            <p
-                                class="text-medium w-70 xl-w-80 lg-w-90 mx-auto margin-40px-bottom sm-w-100 sm-margin-15px-bottom">
-                                We'll be here soon with our new awesome site, subscribe to be notified.</p>
-                            <form class="search-box2" id="subscribenewsletterform2"
-                                action="http://www.themezaa.com/html/pofo/email-templates/subscribe-newsletter.php"
-                                method="post">
-                                <div class="mx-0 form-results"></div>
-                                <div class="input-group add-on w-75 mx-auto sm-w-100">
-                                    <input name="email" id="email" type="email" placeholder="Enter your email address"
-                                        class="form-control required" />
-                                    <div class="input-group-append">
-                                        <button type="submit" class="btn btn-default submit"><i
-                                                class="ti-angle-right text-small m-0"></i></button>
-                                    </div>
+<body id="top">
+    <!-- Main wrapper start -->
+    <div class="wrapper">
+        <!-- Header area start -->
+        <header id="header-area" class="header-area" data-spy="affix" data-offset-top="1">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="navbar-inner">
+                                <div class="logo">
+                                    <a href="#"><img src="img/HJ Logo.png" alt="" height="50" /></a>
                                 </div>
-                            </form>
+                                <div class="main-menu-wrapper" id="navigation">
+                                    <ul class="nav navbar-nav navbar-right" id="main-menu">
+                                        <li class="active"><a href="#home">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#service">Expertise</a></li>
+                                        <li><a href="#portfolio">Certifications</a></li>
+                                        <li><a href="#resume">Resume</a></li>
+                                        <!-- <li><a href="#blog">Blog</a></li> -->
+                                        <li><a href="#contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="expand-menu-open">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="text-center social-icon-style-10 margin-eight-top sm-margin-30px-top">
-                            <ul class="large-icon mobile-small mb-0">
-                                <li><a class="facebook text-white-2" href="https://www.facebook.com/" target="_blank"><i
-                                            class="fab fa-facebook-f" aria-hidden="true"></i><span></span></a></li>
-                                <li><a class="twitter text-white-2" href="https://twitter.com/" target="_blank"><i
-                                            class="fab fa-twitter"></i><span></span></a></li>
-                                <li><a class="google text-white-2" href="https://plus.google.com/" target="_blank"><i
-                                            class="fab fa-google-plus-g"></i><span></span></a></li>
-                                <li><a class="linkedin text-white-2" href="https://linkedin.com/" target="_blank"><i
-                                            class="fab fa-linkedin-in" aria-hidden="true"></i><span></span></a></li>
-                            </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header area end -->
+        <!-- Slide menu start -->
+        <div class="mainmenu-expand">
+            <div class="close-menu">
+                <i class="ti-close"></i>
+            </div>
+            <div class="menu-logo">
+                <a href="index.html"><img src="img/HJ Logo.png" alt="" height="50"></a>
+            </div>
+            <nav class="navbar">
+                <div class="mainmenu-box" id="navigation-2">
+                    <ul class="nav navbar-nav" id="slide-nav">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Expertise</a></li>
+                        <li><a href="#portfolio">Certifications</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <!-- <li><a href="#blog">Blog</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sidebar-bookmark-area">
+                <p>Flow me on social media:</p>
+                <ul class="expand-social social-bookmark">
+                    <li>
+                        <a href="https://scholar.google.com/citations?hl=en&user=maa25BIAAAAJ"><i
+                                class="ti-google"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.scopus.com/authid/detail.uri?authorId=57422861700"><i class="ti-world"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://in.linkedin.com/in/harshil-joshi-a96585253"><i class="ti-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:mailtoharshil@gmail.com"><i class="ti-email"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <p class="expand-copyright">Copyright @ 2023 <a href="#"></a></p>
+        </div>
+        <!-- Slide menu end -->
+        <!-- Content area start  -->
+        <div class="content">
+            <!-- Slider area start -->
+            <div class="slider-area" id="home">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="slider-content-wrapper">
+                                <div class="slider-content text-center">
+                                    <h3>Hello,</h3>
+                                    <h1 class="cd-headline clip is-full-width">
+                                        <span>I'm </span>
+                                        <span class="cd-words-wrapper">
+                                            <b class="is-visible">Harshil Joshi</b>
+                                            <b>Passionate Researcher</b>
+                                            <b>Enthusiast Educator</b>
+                                            <b>Supportive Mentor</b>
+                                        </span>
+                                    </h1>
+                                    <h1 class="mobile-slider-title">I'm Harshil Joshi</h1>
+                                    <ul class="profile-description">
+                                        <li>RESEARCHER</li>
+                                        <li>EDUCATOR</li>
+                                        <li>MENTOR</li>
+                                    </ul>
+                                </div>
+                                <div class="header-social social-bookmark">
+                                    <ul>
+
+                                        <li>
+                                            <a href="https://scholar.google.com/citations?hl=en&user=maa25BIAAAAJ"><i
+                                                    class="ti-google"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.scopus.com/authid/detail.uri?authorId=57422861700"><i class="ti-world"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://in.linkedin.com/in/harshil-joshi-a96585253"><i class="ti-linkedin"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:mailtoharshil@gmail.com"><i class="ti-email"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Slider area end -->
+            <!-- About area start -->
+            <div class="about-area white-bg pt-110" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5">
+                            <div class="profile-image">
+                                <img src="img/Harshil Joshi.jpeg" alt="" width="400px" style="filter: grayscale(0.1);">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-1 col-lg-6 col-lg-offset-1">
+                            <div class="profile-wrapper pt-115">
+                                <div class="section-title">
+                                    <h1>About Me</h1>
+                                </div>
+                                <div class="profile-details">
+                                    <p>To make career with an institution/organization that provides excellent
+                                        opportunities to obtain a challenging position that will expose and enhance my
+                                        professional skills and interpersonal knowledge that contributes towards the
+                                        growth of the institution/organization.</p>
+
+                                </div>
+                                <div class="profile-action-btn">
+                                    <a class="button button-white" href="./Resume Harshil Joshi_30092022.pdf">DOWNLOAD RESUME</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About area end -->
+            <!-- Skill area start -->
+            <!-- <div class="skill-area white-bg pt-100 pb-110">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title text-center">
+                                <h1>Subject Expertise/Taught</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="progress-wrapper">
+                                <div class="single-progressbar">
+                                    <ul style="list-style-type:disc;">
+                                        <li>
+                                            <h4>• Cyber Security</h4>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="single-progressbar">
+                                    <ul style="list-style-type:disc;">
+                                        <li>
+                                            <h4>• Information Security</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="progress-wrapper">
+                                <div class="single-progressbar">
+                                    <ul style="list-style-type:disc;">
+                                        <li>
+                                            <h4>• Data Structure</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="single-progressbar">
+                                    <ul style="list-style-type:disc;">
+                                        <li>
+                                            <h4>• Database Management System</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="progress-wrapper">
+                                <div class="single-progressbar">
+                                    <ul style="list-style-type:disc;">
+                                        <li>
+                                            <h4>• OOP with C++</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="single-progressbar">
+                                    <ul style="list-style-type:disc;">
+                                        <li>
+                                            <h4>• Computer Organization</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Skill area end -->
+            <!-- Service area start -->
+            <div class="service-area gray-bg pt-110 pb-80" id="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title text-center">
+                                <h1>Subject Expertise/Taught</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="service-slider-wrapper">
+                                <div class="service-slider">
+                                    <div class="single-service">
+                                        <div class="service-content text-center">
+                                            <i class="ti-desktop"></i>
+                                            <h5>Cyber Security</h5>
+                                            <p>Cybersecurity is the practice of protecting computers, servers, mobile
+                                                devices, electronic systems, networks, and data from digital attacks,
+                                                theft, and damage.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-service">
+                                        <div class="service-content text-center">
+                                            <i class="ti-vector"></i>
+                                            <h5>Information Security</h5>
+                                            <p>Information security is the practice of protecting information and
+                                                information systems from unauthorized access or threats. It involves
+                                                implementing measures to ensure the confidentiality, integrity, and
+                                                availability of information.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-service">
+                                        <div class="service-content text-center">
+                                            <i class="ti-paint-bucket"></i>
+                                            <h5>Data Structure</h5>
+                                            <p>A data structure is a way of organizing and storing data in a computer so
+                                                that it can be accessed and modified efficiently. Different types of
+                                                data structures are suited to different kinds of applications, and some
+                                                are highly specialized to specific tasks.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-service">
+                                        <div class="service-content text-center">
+                                            <i class="ti-camera"></i>
+                                            <h5>Database Management System</h5>
+                                            <p>A database management system (DBMS) is a software application that
+                                                interacts with the user, other applications, and the database itself to
+                                                capture and analyze the data.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-service">
+                                        <div class="service-content text-center">
+                                            <i class="ti-desktop"></i>
+                                            <h5>Programming in C</h5>
+                                            <p>C is a high-level programming language that was developed in the 1970s.
+                                                It is a widely used, general-purpose programming language that is known
+                                                for its efficiency and flexibility. C is often used to develop operating
+                                                systems, compilers, and other software that needs to be highly
+                                                efficient.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-service">
+                                        <div class="service-content text-center">
+                                            <i class="ti-camera"></i>
+                                            <h5>Object Oriented Programming with C++</h5>
+                                            <p>C++ is an object-oriented programming (OOP) language that was developed
+                                                in the early 1980s. It is an extension of the C programming language,
+                                                and it was designed to be an efficient and flexible language for
+                                                developing a wide range of applications.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-service">
+                                        <div class="service-content text-center">
+                                            <i class="ti-desktop"></i>
+                                            <h5>Computer Organization</h5>
+                                            <p>Computer organization refers to the way that the hardware and software
+                                            components of a computer system are arranged and interconnected. It
+                                            involves the design of the hardware and software components of a
+                                            computer, as well as the way that these components work together to
+                                            perform tasks.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service area end -->
+            <!-- Portfolio area start -->
+            <div class="portfolio-area white-bg pt-110 pb-80" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h1>Certifications</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="portfolio-content">
+                                <!-- <div class="portfolio-filter-wrap text-center">
+                                    <ul class="portfolio-filter">
+                                        <li class="active" data-filter="*">ALL WORK</li>
+                                        <li data-filter=".cat1">WEB DESIGN</li>
+                                        <li data-filter=".cat3">GRAPHIC</li>
+                                        <li data-filter=".cat2">PRINT</li>
+                                        <li data-filter=".cat4">ILLUSRATION</li>
+                                    </ul>
+                                </div> -->
+                                <div class="portfolio portfolio-masonry">
+                                    <div class="portfolio-item cat1 cat3 ">
+                                        <div class="portfolio-item-content">
+                                            <div class="item-thumbnail">
+                                                <img src="img/cert/1.jpeg" alt="">
+                                            </div>
+                                            <div class="portfolio-details">
+                                                <div class="portfolio-details-inner">
+                                                    <a class="venobox portfolio-view-btn" data-gall="myGallery"
+                                                        href="img/cert/1.jpeg"><i class="ti-fullscreen"></i></a>
+                                                    <h3><a href="#">Certificate of Appreciation</a></h3>
+                                                    <ul class="portfolio-tags">
+                                                        <li><a href="#">Program Committee Member & Reviewer AIC 2022</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item cat1 cat2 ">
+                                        <div class="portfolio-item-content">
+                                            <div class="item-thumbnail">
+                                                <img src="img/cert/2.jpeg" alt="">
+                                            </div>
+                                            <div class="portfolio-details">
+                                                <div class="portfolio-details-inner">
+                                                    <a class="venobox portfolio-view-btn" data-gall="myGallery"
+                                                        href="img/cert/2.jpeg"><i class="ti-fullscreen"></i></a>
+                                                    <h3><a href="#">Certificate of Appreciation</a></h3>
+                                                    <ul class="portfolio-tags">
+                                                        <li><a href="#">Program Committee Member & Reviewer CVR 2022</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item cat1 cat4 ">
+                                        <div class="portfolio-item-content">
+                                            <div class="item-thumbnail">
+                                                <img src="img/cert/562_PC-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio-details">
+                                                <div class="portfolio-details-inner">
+                                                    <a class="venobox portfolio-view-btn" data-gall="myGallery"
+                                                        href="img/cert/562_PC-1.png"><i class="ti-fullscreen"></i></a>
+                                                    <h3><a href="#">Participation Certificate</a></h3>
+                                                    <ul class="portfolio-tags">
+                                                        <li><a href="#">ICTIS 2021</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item cat5 cat2 ">
+                                        <div class="portfolio-item-content">
+                                            <div class="item-thumbnail">
+                                                <img src="img/cert/CIS2020 Certificate-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio-details">
+                                                <div class="portfolio-details-inner">
+                                                    <a class="venobox portfolio-view-btn" data-gall="myGallery"
+                                                        href="img/cert/CIS2020 Certificate-1.png"><i class="ti-fullscreen"></i></a>
+                                                    <h3><a href="#">Certificate of Participation</a></h3>
+                                                    <ul class="portfolio-tags">
+                                                        <li><a href="#">CIS 2020</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item cat3 cat5 ">
+                                        <div class="portfolio-item-content">
+                                            <div class="item-thumbnail">
+                                                <img src="img/cert/GTU ICON 2022 certificate-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio-details">
+                                                <div class="portfolio-details-inner">
+                                                    <a class="venobox portfolio-view-btn" data-gall="myGallery"
+                                                        href="img/cert/GTU ICON 2022 certificate-1.png"><i class="ti-fullscreen"></i></a>
+                                                    <h3><a href="#">Presented Research Paper</a></h3>
+                                                    <ul class="portfolio-tags">
+                                                        <li><a href="#">GTU ICON 2022 Certificate</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item portfolio-item-big cat1 cat3 ">
+                                        <div class="portfolio-item-content">
+                                            <div class="item-thumbnail">
+                                                <img src="img/cert/ICEARS 2022 (1)-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio-details">
+                                                <div class="portfolio-details-inner">
+                                                    <a class="venobox portfolio-view-btn" data-gall="myGallery"
+                                                        href="img/cert/ICEARS 2022 (1)-1.png"><i class="ti-fullscreen"></i></a>
+                                                    <h3><a href="#">Certificate of Presentaion</a></h3>
+                                                    <ul class="portfolio-tags">
+                                                        <li><a href="#">ICEARS 2022</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item cat4 cat2 ">
+                                        <div class="portfolio-item-content">
+                                            <div class="item-thumbnail">
+                                                <img src="img/cert/IECICN 2020 certificate-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio-details">
+                                                <div class="portfolio-details-inner">
+                                                    <a class="venobox portfolio-view-btn" data-gall="myGallery"
+                                                        href="img/cert/IECICN 2020 certificate-1.png"><i class="ti-fullscreen"></i></a>
+                                                    <h3><a href="#">Certificate of Participation</a></h3>
+                                                    <ul class="portfolio-tags">
+                                                        <li><a href="#">IECICN 2020 certificate</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item cat4 cat2 ">
+                                        <div class="portfolio-item-content">
+                                            <div class="item-thumbnail">
+                                                <img src="img/cert/ISBM 2022-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio-details">
+                                                <div class="portfolio-details-inner">
+                                                    <a class="venobox portfolio-view-btn" data-gall="myGallery"
+                                                        href="img/cert/ISBM 2022-1.png"><i class="ti-fullscreen"></i></a>
+                                                    <h3><a href="#">Contributed a Paper Title</a></h3>
+                                                    <ul class="portfolio-tags">
+                                                        <li><a href="#">ISBM Bangkok 2022</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item cat4 cat2 ">
+                                        <div class="portfolio-item-content">
+                                            <div class="item-thumbnail">
+                                                <img src="img/cert/JETIRAX06016 2019-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio-details">
+                                                <div class="portfolio-details-inner">
+                                                    <a class="venobox portfolio-view-btn" data-gall="myGallery"
+                                                        href="img/cert/JETIRAX06016 2019-1.png"><i class="ti-fullscreen"></i></a>
+                                                    <h3><a href="#">Certificate of Publication</a></h3>
+                                                    <ul class="portfolio-tags">
+                                                        <li><a href="#">JETIR</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-item cat4 cat2 ">
+                                        <div class="portfolio-item-content">
+                                            <div class="item-thumbnail">
+                                                <img src="img/cert/JETIRAX06017 2019-1.png" alt="">
+                                            </div>
+                                            <div class="portfolio-details">
+                                                <div class="portfolio-details-inner">
+                                                    <a class="venobox portfolio-view-btn" data-gall="myGallery"
+                                                        href="img/cert/JETIRAX06017 2019-1.png"><i class="ti-fullscreen"></i></a>
+                                                        <h3><a href="#">Certificate of Publication</a></h3>
+                                                        <ul class="portfolio-tags">
+                                                            <li><a href="#">JETIR</a></li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio area end -->
+            <!-- Resume area start -->
+            <div class="resume-area pt-110 pb-80 gray-bg" id="resume">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h1>Resume</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="resume-wrapper">
+                                <div class="resume-title">
+                                    <h2> <span><i class="ti-cup"></i></span>Education:</h2>
+                                </div>
+                                <div class="single-resume">
+                                    <p class="work-duration">Started in 2018 - Present December.</p>
+                                    <h4>Pursuing Ph.D.</h4>
+                                    <p>Started research on “Security Enhancement through Reduction in DDOS Attacks for
+                                        IOT-Based Smart Cities” under the guidance of Dr D R Rathod</p>
+                                    <p>Current Status: 7th DPC (out of 8) Successfully completed in May - 2022</p>
+                                    <h5>Gujarat Technological University, Ahmedabad</h5>
+                                </div>
+                                <!-- <div class="single-resume">
+                                    <p class="work-duration">March 2011 - 2014 Deacember.</p>
+                                    <h4>Master of Engineering</h4>
+                                    <p>Completed Dissertation on “User Authentication through Keystroke Dynamics” under
+                                        the guidance of Prof J S Dhobi</p>
+                                    <h5>Computer Science & Engineering from Gujarat Technological University at
+                                        Government Engineering College, Modasa (2018) with 7.33 CPI </h5>
+                                </div>
+                                <div class="single-resume">
+                                    <p class="work-duration">March 2008 - 2010 Deacember.</p>
+                                    <h4>Bachelor of Engineering</h4>
+                                    <p>Computer Engineering from Veer Narmad South Gujarat University at Valia Institute
+                                        of Technology, Valia (Dist: Bharuch) (2010) with 64.61%</p>
+                                    <h5>Valia Institute of Technology</h5>
+                                </div>
+
+                                <div class="single-resume">
+                                    <p class="work-duration">March 2008 - 2010 Deacember.</p>
+                                    <h4>Diploma in Computer Engineering</h4>
+                                    <p>Dharmsinh Desai University at Dharmsinh Desai Institute of Technology, Nadiad
+                                        (2006) with 75.62%</p>
+                                    <h5>Dharmsinh Desai Institute of Technology, Nadiad</h5>
+                                </div>
+                                <div class="single-resume">
+                                    <p class="work-duration">March 2008 - 2010 Deacember.</p>
+                                    <h4>H.S.C. & S.S.C.</h4>
+                                    <p>Science Stream from Gujarat State Higher Education Board (2003) with 51.50%</p>
+
+                                    <p>Gujarat State Education Board (2001) with 90.00%</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="resume-wrapper">
+                                <div class="resume-title">
+                                    <h2> <span><i class="ti-bag"></i></span>Experience:</h2>
+                                </div>
+                                <div class="single-resume">
+                                    <p class="work-duration">June 2019- Present</p>
+                                    <h4><span><img src="img/others/dribbble.png" alt=""></span>Charotar University of
+                                        Science and Technology (CHARUSAT)</h4>
+                                    <p>Currently working as Assistant Professor in Department of Computer Science &
+                                        Engineering, Charotar University of Science and Technology (CHARUSAT), Changa
+                                    </p>
+                                    <h5>Assistant Professor</h5>
+                                </div>
+                                <div class="single-resume">
+                                    <p class="work-duration">June 2012- 2019 June.</p>
+                                    <h4><span><img src="img/others/dribbble.png" alt=""></span>SAL Institute of Technology
+                                        and Engineering Research</h4>
+                                    <p>Worked as Assistant Professor in Department of Computer Engineering, SAL
+                                        Institute of Technology and Engineering Research (Gujarat Technological
+                                        University (GTU) Affiliated), Ahmedabad</p>
+                                    <h5>Assistant Professor</h5>
+                                </div>
+                                <!-- <div class="single-resume">
+                                    <p class="work-duration">Jan 2011- 2012 June.</p>
+                                    <h4><span><img src="img/others/dribbble.png" alt=""></span>Expert Engineering Centre
+                                    </h4>
+                                    <p>Worked as Tutor in Expert Engineering Centre, Ahmedabad</p>
+                                    <h5>Tutor</h5>
+                                </div>
+                                <div class="single-resume">
+                                    <p class="work-duration">July 2010- 2011 Jan.</p>
+                                    <h4><span><img src="img/others/dribbble.png" alt=""></span>Universal College of
+                                        Engineering & Technology</h4>
+                                    <p>Worked as PT Lecturer in Universal College of Engineering & Technology (Gujarat
+                                        Technological University (GTU) Affiliated), Moti Bhoyan, Dist: Gandhinagar</p>
+                                    <h5>PT Lecturer</h5>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Resume area end -->
+            <!-- Testimonial area start -->
+            <div class="testimonial-area white-bg pt-110 pb-150">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h1>Testimonials</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="testimonial-wrapper">
+                                <div class="testimonial-slider">
+                                    <div class="single-testimonial">
+                                        <div class="client-avatar">
+                                            <img src="img/avatar/1.png" alt="">
+                                        </div>
+                                        <div class="testimonial-content-wrapper">
+                                            <div class="testimonial-content text-center">
+                                                <h4>Kunal Parekh</h4>
+                                                <h6>CEO LancingDev</h6>
+                                                <p>Mr. Harshil Sir is an exceptional teacher who truly cares about her students. He goes above and beyond to ensure that each and every one of us understands the material and is able to succeed. His enthusiasm for teaching makes the class engaging and enjoyable. I have learned so much in his class and I am grateful for his dedication to our education.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-testimonial">
+                                        <div class="client-avatar">
+                                            <img src="img/avatar/1.png" alt="">
+                                        </div>
+                                        <div class="testimonial-content-wrapper">
+                                            <div class="testimonial-content text-center">
+                                                <h4>Mehul Minat</h4>
+                                                <h6>CTO LancingDev</h6>
+                                                <p>Mr. Harshil Sir is an amazing teacher who has a way of making the most difficult concepts easy to understand. He is patient and always willing to help. He also makes learning fun and interactive. I have learned so much in his class and I am grateful for his guidance and support.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-testimonial">
+                                        <div class="client-avatar">
+                                            <img src="img/avatar/1.png" alt="">
+                                        </div>
+                                        <div class="testimonial-content-wrapper">
+                                            <div class="testimonial-content text-center">
+                                                <h4>Devarshi Doshi</h4>
+                                                <h6>COO LancingDev</h6>
+                                                <p>Mr. Harshil Sir is a dedicated and knowledgeable teacher who always puts his students first. He creates a welcoming and inclusive classroom environment and makes sure that everyone feels comfortable participating. He is also very approachable and always willing to help. I have learned so much in his class and I am grateful for his kindness and expertise.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-testimonial">
+                                        <div class="client-avatar">
+                                            <img src="img/avatar/2.png" alt="">
+                                        </div>
+                                        <div class="testimonial-content-wrapper">
+                                            <div class="testimonial-content text-center">
+                                                <h4>Devanshi Bhatt</h4>
+                                                <h6>Student</h6>
+                                                <p>Mr. Harshil Sir is a passionate and dedicated teacher who goes above and beyond to ensure his students succeed. He is always willing to help and makes learning fun and interactive. He is also very knowledgeable in his subject matter and makes sure that all students understand the material. I have learned so much in his class and I am grateful for his guidance and support.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-testimonial">
+                                        <div class="client-avatar">
+                                            <img src="img/avatar/1.png" alt="">
+                                        </div>
+                                        <div class="testimonial-content-wrapper">
+                                            <div class="testimonial-content text-center">
+                                                <h4>Arpit Bhatt</h4>
+                                                <h6>Assistant Professor</h6>
+                                                <p>Mr. Harshil is an amazing teacher who has a way of making the most difficult concepts easy to understand. He is patient, kind and always willing to help. His enthusiasm for teaching is contagious and makes the class enjoyable. I have learned so much in his class and I am grateful for his dedication to our education.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial area end -->
+
+            <!-- Work Profile Starts -->
+
+            <!-- Work Profile End  -->
+
+
+            <!-- Counter up area start -->
+            <!-- <div class="counterup-area pb-100 white-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="counter-wrapper">
+                                <div class="single-counter">
+                                    <div class="counter-content">
+                                        <i class="ti-cup"></i>
+                                        <h3>Cup of Tea</h3>
+                                        <h2 class="counter-number">1200</h2>
+                                    </div>
+                                </div>
+                                <div class="single-counter">
+                                    <div class="counter-content">
+                                        <i class="ti-heart"></i>
+                                        <h3>Happy Client</h3>
+                                        <h2 class="counter-number">1080</h2>
+                                    </div>
+                                </div>
+                                <div class="single-counter">
+                                    <div class="counter-content">
+                                        <i class="ti-briefcase"></i>
+                                        <h3>Project Complete</h3>
+                                        <h2 class="counter-number">1170</h2>
+                                    </div>
+                                </div>
+                                <div class="single-counter">
+                                    <div class="counter-content">
+                                        <i class="ti-medall-alt"></i>
+                                        <h3>Awards Win</h3>
+                                        <h2 class="counter-number">750</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Counter up area end -->
+            <!-- Client logo area start -->
+            <div class="client-logo-area gray-bg pt-110 pb-120 faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h1>Professional Summary</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav>
+                                <div class="nav nav-pills nav-underline mb-5 animated" data-animation="fadeInUpShorter"
+                                    data-animation-delay="0.5s" id="myTab" role="tablist">
+                                    <a href="#general" class="nav-item nav-link active" id="general-tab"
+                                        data-toggle="tab" aria-controls="general" aria-selected="true"
+                                        role="tab">Achievements</a>
+                                    <a href="#ico" class="nav-item nav-link" id="ico-tab" data-toggle="tab"
+                                        aria-controls="ico" aria-selected="false" role="tab">Seminars / Workshop</a>
+                                    <a href="#token" class="nav-item nav-link" id="token-tab" data-toggle="tab"
+                                        aria-controls="token" aria-selected="false" role="tab">Reasearch Project</a>
+                                    <a href="#client" class="nav-item nav-link" id="client-tab" data-toggle="tab"
+                                        aria-controls="client" aria-selected="false" role="tab">Research Work</a>
+                                    <a href="#legal" class="nav-item nav-link" id="legal-tab" data-toggle="tab"
+                                        aria-controls="legal" aria-selected="false" role="tab">Professional
+                                        Activities</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="myTabContent">
+                                <!--  achivements tab -->
+                                <div class="tab-pane fade show active in" id="general" role="tabpanel"
+                                    aria-labelledby="general-tab">
+                                    <div id="general-accordion" class="collapse-icon accordion-icon-rotate">
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.1s">
+                                            <div class="card-header" id="headingOne">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link" data-toggle="collapse"
+                                                        data-target="#collapseOne" aria-expanded="true"
+                                                        aria-controls="collapseOne">
+                                                        <span class="icon"></span>
+                                                        Lecturer and Lab Teacher
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseOne" class="collapse in show" aria-labelledby="headingOne"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Taking Lecture/Lab of UG/PG level students.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.2s">
+                                            <div class="card-header" id="headingTwo">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseTwo" aria-expanded="false"
+                                                        aria-controls="collapseTwo">
+                                                        <span class="icon"></span>
+                                                        Prepare time-table for faculties and students at SAL.
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Prepare academic time-table for faculties and students for
+                                                    Department of Computer Engineering, SAL since Jan-2013.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingThree">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseThree" aria-expanded="false"
+                                                        aria-controls="collapseThree">
+                                                        <span class="icon"></span>
+                                                        Mentoring and giving guidance to students throughout thier
+                                                        academics.
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Provided guidance to more than 200 students in thier final year
+                                                    IDP/UDP projects. <br>Mentoring students for their academic needs
+                                                    and overall development.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.4s">
+                                            <div class="card-header" id="headingFour">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseFour" aria-expanded="false"
+                                                        aria-controls="collapseFour">
+                                                        <span class="icon"></span>
+                                                        University level faculty coordinator in Techfest & Cultural
+                                                        Committee
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Working as an institute and university level faculty coordinator in
+                                                    Techfest to arrange and manage various technical events for more
+                                                    than 2000 students. <br> Working as an institute level faculty
+                                                    coordinator in cultural committee to arrange and manage various
+                                                    cultural events for more than 2500 students. <br>
+                                                    Provide guidance to more than 300 students in second/third year
+                                                    design engineering projects.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.5s">
+                                            <div class="card-header" id="headingFive">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseFive" aria-expanded="false"
+                                                        aria-controls="collapseFive">
+                                                        <span class="icon"></span>
+                                                        institute level Design Coordinator
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Working as an institute level Design Coordinator from 2015 to 2019
+                                                    (4 Years)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingSix">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseSix" aria-expanded="false"
+                                                        aria-controls="collapseSix">
+                                                        <span class="icon"></span>
+                                                        Department level faculty coordinator in industrial visit.
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Working as a department level faculty coordinator in industrial
+                                                    visit committee to arrange and manage various industrial visit for
+                                                    students of Department of Computer Engineering since Jul-2016.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingSeven">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseSeven" aria-expanded="false"
+                                                        aria-controls="collapseSeven">
+                                                        <span class="icon"></span>
+                                                        Arranged various seminars.
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Arrange various educational seminar and workshop for students of
+                                                    Department of Computer Engineering.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingEight">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseEight" aria-expanded="false"
+                                                        aria-controls="collapseEight">
+                                                        <span class="icon"></span>
+                                                        Coordinated for National Level Conferences
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Co-ordinate 1-day National level conference on “Transforming ICT to
+                                                    IOT” in association with IJSRD Journal on 20-Jan-2016. <br>
+                                                    Co-ordinate 1 day National level conference on “Latest Trends in
+                                                    Networking & Cyber Security” in association with ISTE and IJIRST
+                                                    Journal on 17-Mar-2017. <br>
+                                                    Co-ordinate 2 days National level conference on “Advances in
+                                                    Computer Technologies” in association with GUJCOST and JETIR (UGC
+                                                    level Journal) on 28-Mar-2019 and 29-Mar-2019.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingNine">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseNine" aria-expanded="false"
+                                                        aria-controls="collapseNine">
+                                                        <span class="icon"></span>
+                                                        Coordinated Zonal Techfest
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Co-ordinate 2 days Zonal Techfest, organized by GTU & SAL Technical
+                                                    Campus on 1-Mar-2016 and 2-Mar-2016.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingTen">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseTen" aria-expanded="false"
+                                                        aria-controls="collapseTen">
+                                                        <span class="icon"></span>
+                                                        Arranged various industrial visits.
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Arrange industrial visit at NSPF center for Advance Computing,
+                                                    C-DAC, Pune during April-2017. <br>
+                                                    Arrange industrial visit at HERE Technologies, IT Park, Gurgaon
+                                                    during August-2017. <br>
+                                                    Arrange industrial visit at I-Medita Learning Solutions, Pune during
+                                                    September-2018
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingEleven">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseEleven" aria-expanded="false"
+                                                        aria-controls="collapseEleven">
+                                                        <span class="icon"></span>
+                                                        Volunteering in Fest.
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Work as volunteer in 7th Zonal and Inter-zonal Youth festival of GTU
+                                                    XITIJ-2017 held at SAL Education Campus during Oct, 2017.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingTwelve">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseTwelve" aria-expanded="false"
+                                                        aria-controls="collapseTwelve">
+                                                        <span class="icon"></span>
+                                                        Worked as member of Dicipiline Committee
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Work as a member of Discipline Committee in 4th International Day of
+                                                    Yoga organized by SAL Education Campus in collaboration with
+                                                    Vivekanand Kendra, Kanyakumari on 21-Jun-2018.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingThirteen">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseThirteen" aria-expanded="false"
+                                                        aria-controls="collapseThirteen">
+                                                        <span class="icon"></span>
+                                                        Working as IQAC coordinator & Member of Board of Studies
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseThirteen" class="collapse"
+                                                aria-labelledby="headingThirteen" data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Working as IQAC coordinator at CSE Department, CHARUSAT. <br>
+                                                    Working as Member of Board of Studies (BoS) for CSE Department,
+                                                    CHARUSAT
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingFourteen">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseFourteen" aria-expanded="false"
+                                                        aria-controls="collapseFourteen">
+                                                        <span class="icon"></span>
+                                                        IEEE Branch establisher and counsellor at CHARUSAT.
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseFourteen" class="collapse"
+                                                aria-labelledby="headingFourteen" data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Established IEEE student branch at DEPSTAR, CHARUSAT <br>
+                                                    Working as IEEE student branch counselor since 2020.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card animated" data-animation="fadeInUpShorter"
+                                            data-animation-delay="0.3s">
+                                            <div class="card-header" id="headingFifteen">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#collapseFifteen" aria-expanded="false"
+                                                        aria-controls="collapseFifteen">
+                                                        <span class="icon"></span>
+                                                        Organized 40+ Seminars/Webinars/Expert Talk/Hands-on Session
+                                                        under DEPSTAR IEEE SB
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen"
+                                                data-parent="#general-accordion">
+                                                <div class="card-body">
+                                                    Organized 40+ Seminar/Webinar/Expert talk/Workshop/Hands-on Session
+                                                    for students and faculty members at CHARUSAT under DEPSTAR IEEE SB.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--  achivements tab ends -->
+
+                                <!--  semianr / workshop tab -->
+                                <div class="tab-pane fade" id="ico" role="tabpanel" aria-labelledby="ico-tab">
+                                    <div id="ico-accordion" class="collapse-icon accordion-icon-rotate">
+                                        <div class="card">
+                                            <div class="card-header" id="icoHeadingOne">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link" data-toggle="collapse"
+                                                        data-target="#icoCollapseOne" aria-expanded="true"
+                                                        aria-controls="icoCollapseOne">
+                                                        <span class="icon"></span>
+                                                        Attended Faculty Development Programs for Design Engineering at
+                                                        GTU
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="icoCollapseOne" class="collapse show"
+                                                aria-labelledby="icoHeadingOne" data-parent="#ico-accordion">
+                                                <div class="card-body">
+                                                    - Attended 4 days Faculty Development Program for Design
+                                                    Engineering-1A at GTU from 14-Sep-2014 to 18-Sep-2014. <br>
+                                                    - Attended 4 days Faculty Development Program for Design
+                                                    Engineering-1B at GTU from 23-Mar-2015 to 26-Mar-2015. <br>
+                                                    - Attended 4 days Faculty Development Program for Design
+                                                    Engineering-2A at GTU from 4-Aug-2015 to 7-Aug-2015. <br>
+                                                    - Attended 4 days Faculty Development Program for Design
+                                                    Engineering-2B at GTU during March-2016.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="icoHeadingTwo">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#icoCollapseTwo" aria-expanded="false"
+                                                        aria-controls="icoCollapseTwo">
+                                                        <span class="icon"></span>
+                                                        Attended National workshop at GTU.
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="icoCollapseTwo" class="collapse" aria-labelledby="icoHeadingTwo"
+                                                data-parent="#ico-accordion">
+                                                <div class="card-body">
+                                                    Attended 2 days national workshop on “Development of Policy
+                                                    Framework for Innovation, Student Entrepreneurship & IPR” at GTU on
+                                                    21-Nov-2014 and 22-Nov-2014
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="icoHeadingThree">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#icoCollapseThree" aria-expanded="false"
+                                                        aria-controls="icoCollapseThree">
+                                                        <span class="icon"></span>
+                                                        Attended National level conference on “Transforming ICT to IOT”
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="icoCollapseThree" class="collapse"
+                                                aria-labelledby="icoHeadingThree" data-parent="#ico-accordion">
+                                                <div class="card-body">
+                                                    Attended 1 day National level conference on “Transforming ICT to
+                                                    IOT” in association with IJSRD Journal on 20-Jan-2016
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="icoHeadingFour">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#icoCollapseFour" aria-expanded="false"
+                                                        aria-controls="icoCollapseFour">
+                                                        <span class="icon"></span>
+                                                        Attended National level conference on “Latest Trends in
+                                                        Networking & Cyber Security”
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="icoCollapseFour" class="collapse" aria-labelledby="icoHeadingFour"
+                                                data-parent="#ico-accordion">
+                                                <div class="card-body">
+                                                    Attended 1 day National level conference on “Latest Trends in
+                                                    Networking & Cyber Security” in association with ISTE and IJIRST
+                                                    Journal on 17-Mar-2017.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="icoHeadingFive">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#icoCollapseFive" aria-expanded="false"
+                                                        aria-controls="icoCollapseFive">
+                                                        <span class="icon"></span>
+                                                        Participated in International Day of Yoga
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="icoCollapseFive" class="collapse" aria-labelledby="icoHeadingFive"
+                                                data-parent="#ico-accordion">
+                                                <div class="card-body">
+                                                    Participated in 4th International Day of Yoga organized by SAL
+                                                    Education Campus in collaboration with Vivekanand Kendra,
+                                                    Kanyakumari on 21-Jun-2018
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="icoHeadingSix">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#icoCollapseSix" aria-expanded="false"
+                                                        aria-controls="icoCollapseSix">
+                                                        <span class="icon"></span>
+                                                        Attended National level conference on “Advances in Computer
+                                                        Technologies”
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="icoCollapseSix" class="collapse" aria-labelledby="icoHeadingSix"
+                                                data-parent="#ico-accordion">
+                                                <div class="card-body">
+                                                    Attended 2 days National level conference on “Advances in Computer
+                                                    Technologies” in association with GUJCOST and JETIR (UGC level
+                                                    Journal) on 28-Mar-2019 and 29-Mar-2019
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--  seminar wokshop tab ends  -->
+                                <!--  research project tab -->
+                                <div class="tab-pane fade" id="token" role="tabpanel" aria-labelledby="token-tab">
+                                    <div id="token-accordion" class="collapse-icon accordion-icon-rotate">
+                                        <div class="card">
+                                            <div class="card-header" id="tokenHeadingOne">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link" data-toggle="collapse"
+                                                        data-target="#tokenCollapseOne" aria-expanded="true"
+                                                        aria-controls="tokenCollapseOne">
+                                                        <span class="icon"></span>
+                                                        Sponsored Research Project with grant of Rs 2,20,000.
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="tokenCollapseOne" class="collapse show"
+                                                aria-labelledby="tokenHeadingOne" data-parent="#token-accordion">
+                                                <div class="card-body">
+                                                    Working on research project “Security Enhancement through Reduction
+                                                    in DDOS Attacks for Internet of Things-based Smart Cities” as
+                                                    Principal Investigator (PI) under CHARUSAT SEED Grant Project scheme
+                                                    from July-2020 with Rs 2,20,000 Grant Approved by Research Cell,
+                                                    Charotar University of Science and Technology, Changa (Project
+                                                    Tenure: 3 Years)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- research projecr tab ends -->
+                                <!-- reasearch work tab starts -->
+                                <div class="tab-pane fade" id="client" role="tabpanel" aria-labelledby="client-tab">
+                                    <div id="client-accordion" class="collapse-icon accordion-icon-rotate">
+                                        <div class="card">
+                                            <div class="card-header" id="clientHeadingOne">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link" data-toggle="collapse"
+                                                        data-target="#clientCollapseOne" aria-expanded="true"
+                                                        aria-controls="clientCollapseOne">
+                                                        <span class="icon"></span>
+                                                        Collapsible Group Item #1
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="clientCollapseOne" class="collapse show"
+                                                aria-labelledby="clientHeadingOne" data-parent="#client-accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusm
+                                                    accusamus labore sustainable VHS.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="clientHeadingTwo">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#clientCollapseTwo" aria-expanded="false"
+                                                        aria-controls="clientCollapseTwo">
+                                                        <span class="icon"></span>
+                                                        Collapsible Group Item #2
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="clientCollapseTwo" class="collapse"
+                                                aria-labelledby="clientHeadingTwo" data-parent="#client-accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusm
+                                                    accusamus labore sustainable VHS.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="clientHeadingThree">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#clientCollapseThree" aria-expanded="false"
+                                                        aria-controls="clientCollapseThree">
+                                                        <span class="icon"></span>
+                                                        Collapsible Group Item #3
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="clientCollapseThree" class="collapse"
+                                                aria-labelledby="clientHeadingThree" data-parent="#client-accordion">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusm
+                                                    accusamus labore sustainable VHS.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  research work ends-->
+                                <!-- professional activites  -->
+                                <div class="tab-pane fade" id="legal" role="tabpanel" aria-labelledby="legal-tab">
+                                    <div id="legal-accordion" class="collapse-icon accordion-icon-rotate">
+                                        <div class="card">
+                                            <div class="card-header" id="legalHeadingOne">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link" data-toggle="collapse"
+                                                        data-target="#legalCollapseOne" aria-expanded="true"
+                                                        aria-controls="legalCollapseOne">
+                                                        <span class="icon"></span>
+                                                        Program Committee Member and Reviewer at ICVR 2022
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="legalCollapseOne" class="collapse show"
+                                                aria-labelledby="legalHeadingOne" data-parent="#legal-accordion">
+                                                <div class="card-body">
+                                                    Act as a Program Committee Member and Reviewer at 2nd International
+                                                    Conference on Computer Vision and Robotics (CVR 2022) organized by
+                                                    Soft Computing Research Society (SCRS) and Babu Banarasi Das
+                                                    University, Lucknow, UP from 21/05/2022 to 22/05/2022
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="legalHeadingTwo">
+                                                <h5 class="mb-0">
+                                                    <a class="btn btn-link collapsed" data-toggle="collapse"
+                                                        data-target="#legalCollapseTwo" aria-expanded="false"
+                                                        aria-controls="legalCollapseTwo">
+                                                        <span class="icon"></span>
+                                                        Program Committee Member and Reviewer at IEEE World Conference
+                                                        2022
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="legalCollapseTwo" class="collapse"
+                                                aria-labelledby="legalHeadingTwo" data-parent="#legal-accordion">
+                                                <div class="card-body">
+                                                    Act as a Program Committee Member and Reviewer at 2022 IEEE World
+                                                    conference on Applied intelligence and computing (AIC 2022)
+                                                    organized by IEEE UP Section and Rajkiya Engineering College,
+                                                    Sonbhadra, UP from 17/06/2022 to 19/06/2022
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- professional activities end  -->
+                            </div>
+                            <!-- <div class="client-logo-slider">
+                                <div class="single-brand-logo">
+                                    <div class="client-logo-wrapper text-center">
+                                        <div class="client-logo-inner">
+                                            <img src="img/clients/1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-brand-logo">
+                                    <div class="client-logo-wrapper text-center">
+                                        <div class="client-logo-inner">
+                                            <img src="img/clients/2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-brand-logo">
+                                    <div class="client-logo-wrapper text-center">
+                                        <div class="client-logo-inner">
+                                            <img src="img/clients/3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-brand-logo">
+                                    <div class="client-logo-wrapper text-center">
+                                        <div class="client-logo-inner">
+                                            <img src="img/clients/4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-brand-logo">
+                                    <div class="client-logo-wrapper text-center">
+                                        <div class="client-logo-inner">
+                                            <img src="img/clients/5.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-brand-logo">
+                                    <div class="client-logo-wrapper text-center">
+                                        <div class="client-logo-inner">
+                                            <img src="img/clients/6.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-brand-logo">
+                                    <div class="client-logo-wrapper text-center">
+                                        <div class="client-logo-inner">
+                                            <img src="img/clients/1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-brand-logo">
+                                    <div class="client-logo-wrapper text-center">
+                                        <div class="client-logo-inner">
+                                            <img src="img/clients/2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-brand-logo">
+                                    <div class="client-logo-wrapper text-center">
+                                        <div class="client-logo-inner">
+                                            <img src="img/clients/2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-brand-logo">
+                                    <div class="client-logo-wrapper text-center">
+                                        <div class="client-logo-inner">
+                                            <img src="img/clients/2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Client logo area end -->
+            <!-- Blog area start -->
+            <!-- <div class="blog-area white-bg pt-110 pb-80" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h1>Blog Post</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <article class="blog-post">
+                                <div class="blog-post-inner">
+                                    <div class="post-thumbnail">
+                                        <a href="#"><img class="img-responsive" src="img/blog/1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-content-inner text-center">
+                                            <h3><a href="#">Design is not just what it looks like</a></h3>
+                                            <p>Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do
+                                                eiusmod tem aincididunt elauta labore eta dolore magna aliqualy eminem
+                                                faenimveni[...]</p>
+                                        </div>
+                                        <div class="post-footer">
+                                            <div class="read-more-btn">
+                                                <a href="#" class="">read more</a>
+                                            </div>
+                                            <ul class="post-social-share">
+                                            
+                                                <li>
+                                                    <a href="https://scholar.google.com/citations?hl=en&user=maa25BIAAAAJ"><i
+                                                            class="ti-google"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.scopus.com/authid/detail.uri?authorId=57422861700"><i class="ti-world"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://in.linkedin.com/in/harshil-joshi-a96585253"><i class="ti-linkedin"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="mailto:mailtoharshil@gmail.com"><i class="ti-email"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-12">
+                                    <article class="blog-post horizontal">
+                                        <div class="post-thumbnail">
+                                            <a href="#"><img class="img-responsive" src="img/blog/2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="post-content">
+                                            <div class="post-content-inner">
+                                                <h3><a href="#">Beautiful Place for Journey</a></h3>
+                                                <p>Lorem dolor sit amet, consectetur floralm adipisicing elit, sed do
+                                                    eiusmod tem aincididunt elauta labore eta dolore magna aliqualy
+                                                    eminem faenimveni[...]</p>
+                                            </div>
+                                            <div class="post-footer">
+                                                <div class="read-more-btn">
+                                                    <a href="#" class="">read more</a>
+                                                </div>
+                                                <ul class="post-social-share">
+                                                    <li>
+                                                        <a href="https://scholar.google.com/citations?hl=en&user=maa25BIAAAAJ"><i
+                                                                class="ti-google"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.scopus.com/authid/detail.uri?authorId=57422861700"><i class="ti-world"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://in.linkedin.com/in/harshil-joshi-a96585253"><i class="ti-linkedin"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="mailto:mailtoharshil@gmail.com"><i class="ti-email"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-6 col-lg-12">
+                                    <article class="blog-post horizontal">
+                                        <div class="blog-post-inner">
+                                            <div class="post-thumbnail">
+                                                <a href="#"><img class="img-responsive" src="img/blog/3.jpg" alt=""></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <div class="post-content-inner">
+                                                    <h3><a href="#">Beautiful Place for Journey</a></h3>
+                                                    <p>Lorem dolor sit amet, consectetur floralm adipisicing elit, sed
+                                                        do eiusmod tem aincididunt elauta labore eta dolore magna
+                                                        aliqualy eminem faenimveni[...]</p>
+                                                </div>
+                                                <div class="post-footer">
+                                                    <div class="read-more-btn">
+                                                        <a href="#" class="">read more</a>
+                                                    </div>
+                                                    <ul class="post-social-share">
+                                                        <li>
+                                                            <a href="https://scholar.google.com/citations?hl=en&user=maa25BIAAAAJ"><i
+                                                                    class="ti-google"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://www.scopus.com/authid/detail.uri?authorId=57422861700"><i class="ti-world"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://in.linkedin.com/in/harshil-joshi-a96585253"><i class="ti-linkedin"></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="mailto:mailtoharshil@gmail.com"><i class="ti-email"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Blog area end -->
+            <!-- Call to action start -->
+            <!-- <div class="call-to-action gray-bg pt-100 pb-110" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="call-to-text text-center">
+                                <h1>Wanna Date with me?</h1>
+                                <p>Tell me about your project story and project brief</p>
+                                <a class="button large" href="#">Start Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Call to action end -->
+            <!-- Contact area start -->
+            <div class="contact-area gray-bg pb-110">
+                <div class="container">
+                    <div class="contact-wrapper">
+                        <div class="row">
+                            <!-- <div class="col-sm-4">
+                                <div class="contact-address text-center">
+                                    <i class="ti-headphone-alt"></i>
+                                    <h4>
+                                        <a href="tel:+918128989597">+91 81289 89597</a>
+                                    </h4>
+                                </div>
+                            </div> -->
+                            <div class="col-sm-6">
+                                <div class="contact-address text-center">
+                                    <i class="ti-map-alt"></i>
+                                    <h4>
+                                        Ahmedabad, Gujarat
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="contact-address text-center">
+                                    <i class="ti-email"></i>
+                                    <h4>
+                                        <a href="mailto:mailtoharshil@gmail.com">mailtoharshil@gmail.com</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <form id="contact-us" action="https://formspree.io/f/mwkjpnww"
+                                method="POST">
+                                <div class="form-inner">
+                                    <div class="col-md-5 col-sm-6">
+                                        <div class="input-box">
+                                            <input name="name" placeholder="Your Name" type="text">
+                                            <input name="email" placeholder="Your Email" type="email">
+                                            <input name="phone" placeholder="Your Phone Number" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 col-sm-6">
+                                        <div class="message-box">
+                                            <textarea name="message" cols="30" rows="2"
+                                                placeholder="Message"></textarea>
+                                            <input class="button" type="submit" value="SEND MESSAGE">
+                                            <p class="contact-send-message"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact area end -->
+            <!-- Footer area start -->
+            <footer class="footer-area gray-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="social-bookmark footer-social text-center">
+                                <ul>
+                                    <li>
+                                        <a href="https://scholar.google.com/citations?hl=en&user=maa25BIAAAAJ"><i
+                                                class="ti-google"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.scopus.com/authid/detail.uri?authorId=57422861700"><i class="ti-world"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://in.linkedin.com/in/harshil-joshi-a96585253"><i class="ti-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:mailtoharshil@gmail.com"><i class="ti-email"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="copyright text-center">
+                                <p>Copyright @ 2023 <a href="#">Harshil Joshi</a> all right reserved, designed by <a
+                                        href="#">LancingDev</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer area end -->
         </div>
-    </section>
-    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootsnav.js"></script>
-    <script type="text/javascript" src="js/jquery.nav.js"></script>
-    <script type="text/javascript" src="js/hamburger-menu.js"></script>
-    <script type="text/javascript" src="js/theme-vendors.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+        <!-- Content area end  -->
+    </div>
+    <!-- Main wrapper end -->
+    <!-- All JS file included here -->
+
+
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ajax-mail.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="faq-assets/vendors/vendors.min.js"></script>
+    <!-- <script src="faq-assets/vendors/waypoints/jquery.waypoints.min.js"></script> -->
+    <!-- <script src="faq-assets/js/theme.min.js"></script> -->
+    <!-- All FAQ JS file included here -->
+
 </body>
+
+
+
 
 </html>
